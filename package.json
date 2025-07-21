@@ -1,0 +1,78 @@
+{
+  "name": "@esengine/nova-ecs-physics-box2d",
+  "version": "1.0.1",
+  "description": "Box2D physics engine implementation for NovaECS physics core",
+  "keywords": [
+    "ecs",
+    "physics",
+    "box2d",
+    "game",
+    "typescript",
+    "2d"
+  ],
+  "author": "esengine",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/esengine/nova-ecs-physics-box2d.git"
+  },
+  "homepage": "https://github.com/esengine/nova-ecs-physics-box2d#readme",
+  "bugs": {
+    "url": "https://github.com/esengine/nova-ecs-physics-box2d/issues"
+  },
+  "main": "dist/nova-ecs-physics-box2d.umd.js",
+  "module": "dist/nova-ecs-physics-box2d.esm.js",
+  "types": "dist/nova-ecs-physics-box2d.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup -c --bundleConfigAsCjs",
+    "dev": "rollup -c -w --bundleConfigAsCjs",
+    "docs": "typedoc",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "test": "vitest",
+    "test:watch": "vitest --watch",
+    "test:ui": "vitest --ui",
+    "test:coverage": "vitest --coverage",
+    "prepack": "npm run build",
+    "prepublishOnly": "npm run lint && npm run test -- --run && npm run build",
+    "publish:patch": "npm version patch && npm publish --access public",
+    "publish:minor": "npm version minor && npm publish --access public",
+    "publish:major": "npm version major && npm publish --access public"
+  },
+  "peerDependencies": {
+    "@esengine/nova-ecs": "^1.0.0",
+    "@esengine/nova-ecs-math": "^1.0.0",
+    "@esengine/nova-ecs-physics-core": "^1.0.0"
+  },
+  "dependencies": {
+    "box2d-wasm": "^7.0.0"
+  },
+  "devDependencies": {
+    "@esengine/nova-ecs": "^1.0.11",
+    "@esengine/nova-ecs-math": "^1.0.5",
+    "@esengine/nova-ecs-physics-core": "^1.0.0",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/jsdom": "^21.1.7",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@vitest/ui": "^3.2.4",
+    "eslint": "^8.57.1",
+    "jsdom": "^26.1.0",
+    "prettier": "^3.0.0",
+    "rollup": "^4.9.0",
+    "rollup-plugin-dts": "^6.2.1",
+    "tslib": "^2.6.2",
+    "typedoc": "^0.28.7",
+    "typescript": "5.5.4",
+    "vite": "^7.0.5",
+    "vitest": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=16"
+  }
+}
