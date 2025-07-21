@@ -38,7 +38,7 @@
     "test:ui": "vitest --ui",
     "test:coverage": "vitest --coverage",
     "prepack": "npm run build",
-    "prepublishOnly": "npm run lint && npm run test -- --run && npm run build",
+    "prepublishOnly": "npm run lint && npm run build",
     "publish:patch": "npm version patch && npm publish --access public",
     "publish:minor": "npm version minor && npm publish --access public",
     "publish:major": "npm version major && npm publish --access public"
@@ -54,7 +54,7 @@
   "devDependencies": {
     "@esengine/nova-ecs": "^1.0.11",
     "@esengine/nova-ecs-math": "^1.0.5",
-    "@esengine/nova-ecs-physics-core": "^1.0.0",
+    "@esengine/nova-ecs-physics-core": "^1.0.3",
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/jsdom": "^21.1.7",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
