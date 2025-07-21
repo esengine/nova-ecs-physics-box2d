@@ -31,6 +31,12 @@ Required dependencies:
 npm install @esengine/nova-ecs @esengine/nova-ecs-math @esengine/nova-ecs-physics-core
 ```
 
+## API Documentation | API 文档
+
+For complete API documentation, visit: [https://esengine.github.io/nove-ecs-physics-box2d/](https://esengine.github.io/nova-ecs-physics-box2d/)
+
+完整的API文档请访问：[https://esengine.github.io/nove-ecs-physics-box2d/](https://esengine.github.io/nova-ecs-physics-box2d/)
+
 ## Quick Start | 快速开始
 
 ```typescript
