@@ -1,6 +1,6 @@
 {
   "name": "@esengine/nova-ecs-physics-box2d",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Box2D physics engine implementation for NovaECS physics core",
   "keywords": [
     "ecs",
