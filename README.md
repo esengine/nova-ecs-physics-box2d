@@ -5,7 +5,6 @@ Box2D physics engine implementation for NovaECS physics core. Provides determini
 NovaECS物理核心的Box2D物理引擎实现。使用行业标准的Box2D引擎提供确定性2D物理模拟。
 
 [![npm version](https://badge.fury.io/js/%40esengine%2Fnova-ecs-physics-box2d.svg)](https://badge.fury.io/js/%40esengine%2Fnova-ecs-physics-box2d)
-[![CI](https://github.com/esengine/nova-ecs-physics-box2d/workflows/CI/badge.svg)](https://github.com/esengine/nova-ecs-physics-box2d/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5.4-blue.svg)](https://www.typescriptlang.org/)
 
